@@ -7,14 +7,14 @@
         padding-right: 70px
         &__title
             font-size: 41px
-            font-weight: 700
             line-height: 55px
             margin-bottom: 38px
-            font-family: "Museo Sans Cyrl 700"  
+            +bold
+            margin-top: 25px
+            margin-left: -2px
         &__subtitle
+            +bold
             font-size: 20px
-            font-weight: 700
-            font-family: "Museo Sans Cyrl 700"
             margin-bottom: 69px
             display: inline-block
     &-list
@@ -32,14 +32,17 @@
         &__image
             margin-right: 30px
         &__text
-            font-family: "Museo Sans Cyrl 300"
             font-size: 14px
-            font-weight: 400
             line-height: 24px
             width: 237px
+        &__text_mt2
+            margin-top: -5px
     &-image
         width: 570px
         height: 488px
+    &-image img
+        margin-top: -5px
+        margin-left: -5px
 
 @media (max-width: 1200px)
     .hero
@@ -70,10 +73,10 @@
             width: 300px
             &__title
                 font-size: 24px
-                line-height: 1.4
-                margin-bottom: 4px
-                margin-top: 44px
-                margin-left: 5px
+                line-height: 1.3
+                margin-bottom: 7px
+                margin-top: 45px
+                margin-left: 4px
             &__subtitle
                 font-size: 16px
                 margin-bottom: 28px
@@ -81,21 +84,30 @@
                 width: 200px
         &-list
             &__item_mb1
-                margin-bottom: 15px
-                margin-left: 5px
+                margin-bottom: 16px
+                margin-left: 3px
             &__item_mb2
-                margin-bottom: 13px
-                margin-left: 5px
+                margin-bottom: 15px
+                margin-left: 3px
             &__item_mb3
                 margin-bottom: 15px
-                margin-left: 5px
+                margin-left: 3px
             &__text
+                line-height: 1.2
                 font-size: 12px
             &__image
                 margin-right: 15px
+            &__text_mb1
+                margin-top: -2px
+            &__text_mb1
+                margin-bottom: -2px
+            &__text_mt2
+                margin-top: -2px
         &-image img
-            width: 270px
-            height: 231px
+            width: 290px
+            height: 251px
+            margin-top: -10px
+            margin-left: -10px
         &-image
-            width: 270px
-            height: 231px
+            width: 290px
+            height: 251px
