@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ремонт квартир</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -40,25 +42,25 @@
                         <ul class="hero-list">
                             <li class="hero-list__item hero-list__item_mb1">
                                 <div class="hero-list__image">
-                                    <img src="../src/img/clock.png" alt="clock">
+                                    <img src="./img/clock.png" alt="clock">
                                 </div>
                                 <span class="hero-list__text hero-list__text_mb1">Точно соблюдаем сроки</span>
                             </li>
                             <li class="hero-list__item hero-list__item_mb2">
                                 <div class="hero-list__image">
-                                    <img src="../src/img/calculator.png" alt="calculator">
+                                    <img src="./img/calculator.png" alt="calculator">
                                 </div>
                                 <span class="hero-list__text hero-list__text_mt2">Рассчитаем смету на работы <br>и материалы в день обращения</span></li>
                             <li class="hero-list__item hero-list__item_mb3">
                                 <div class="hero-list__image">
-                                    <img src="../src/img/paint-board.png" alt="paint-board">
+                                    <img src="./img/paint-board.png" alt="paint-board">
                                 </div>
                                 <span class="hero-list__text hero-list__text_mt3">Предложим более 100 вариантов исполнения дизайна Вашего жилья</span>
                             </li>
                         </ul>
                    </div>
                    <div class="hero-image">
-                       <img src="../src/img/hero-image.jpg" alt="План квартиры">
+                       <img src="./img/hero-image.jpg" alt="План квартиры">
                    </div>
                </div>
            </div>
@@ -69,11 +71,14 @@
                 <div class="offer-block">               
                     <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
                     <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-                    <form action="#" class="form offer_form">
-                        <input type="text" class="input offer__input" placeholder="Ваше имя">
-                        <input type="tell" class="input offer__input" placeholder="Ваш телефон">
+                    <form action="#" id="offer-form" class="form offer_form">
+                        <input type="text" id="user" name="username" class="input offer__input" placeholder="Ваше имя">
+                        <input type="tel" id="phone" name="userphone" class="input offer__input" placeholder="Ваш телефон">
                         <button class="button offer__button">Получить бесплатный дизайн-проект</button>
                     </form>
+
+                   <div class="success"></div>     
+
                     <div class="offer__footer">
                         <p class="offer__footer_elem-1">Наш менеджер перезвонит Вам в течение 60 секунд</p>
                         <div class="offer__footer_elem-2">
@@ -93,6 +98,30 @@
        </div>
    </div>
 
+   <section class="section portfolio">
+       <div class="container">
+           <h2 class="section-title portfolio__title">Работа с 2007 года, <br> мы сделали более 500 ремонтов в квартирах и домах</h2>
+           <div class="slider owl-carousel">
+               <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
+               <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt=""></div>
+               <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt=""></div>
+               <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
+               <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt=""></div>
+               <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt=""></div>
+           </div>
+
+            <div class="arrows portfolio__arrows">
+                <div class="arrows__left">
+                    <img src="img/portfolio/left-arrow.png" alt="">
+                </div>
+                <div class="arrows__right">
+                 <img src="img/portfolio/right-arrow.png" alt="">
+                </div>
+            </div>              
+
+       </div>
+   </section>
+
    <!--<script src="js/main.js"></script>-->
 
    <script
@@ -101,6 +130,36 @@
    crossorigin="anonymous"></script>
 
    <script src="js/modal.js"></script>
+
+   <div class="to_top" id="toTop"> ^ Наверх </div>
+
+   <script src="js/button_top.js"></script>
+   <script src="js/scripts.js"></script>
+   <script src="js/owl.carousel.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+
+   <script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                loop:true,
+                margin:30,
+                nav:true,
+                navText: [$('.arrows__left'),$('.arrows__right')],
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 2
+                  },
+                  1000: {
+                    items: 3
+                  }
+                }
+              })
+            })
+   </script>
 
 </body>
 </html>
