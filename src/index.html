@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">   
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <nav class="navbar">
        <div class="container">
            <div class="navbar-block">
-               <div class="navbar__logo">
+               <div class="navbar__logo wow flip" data-wow-delay="2s">
                    <img src="img/logo.png" alt="Логотип">
                </div>
                <div class="navbar__info">
@@ -41,18 +42,18 @@
                         </span>
                         <ul class="hero-list">
                             <li class="hero-list__item hero-list__item_mb1">
-                                <div class="hero-list__image">
+                                <div class="hero-list__image wow bounceOut" data-wow-delay="3s">
                                     <img src="./img/clock.png" alt="clock">
                                 </div>
                                 <span class="hero-list__text hero-list__text_mb1">Точно соблюдаем сроки</span>
                             </li>
                             <li class="hero-list__item hero-list__item_mb2">
-                                <div class="hero-list__image">
+                                <div class="hero-list__image wow bounceOut" data-wow-delay="3s">
                                     <img src="./img/calculator.png" alt="calculator">
                                 </div>
                                 <span class="hero-list__text hero-list__text_mt2">Рассчитаем смету на работы <br>и материалы в день обращения</span></li>
                             <li class="hero-list__item hero-list__item_mb3">
-                                <div class="hero-list__image">
+                                <div class="hero-list__image wow bounceOut" data-wow-delay="3s">
                                     <img src="./img/paint-board.png" alt="paint-board">
                                 </div>
                                 <span class="hero-list__text hero-list__text_mt3">Предложим более 100 вариантов исполнения дизайна Вашего жилья</span>
@@ -74,7 +75,7 @@
                     <form action="#" id="offer-form" class="form offer_form">
                         <input type="text" id="user" name="username" class="input offer__input" placeholder="Ваше имя">
                         <input type="tel" id="phone" name="userphone" class="input offer__input" placeholder="Ваш телефон">
-                        <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+                        <button class="button offer__button wow tada" data-wow-delay="2s">Получить бесплатный дизайн-проект</button>
                     </form>
 
                    <div class="success"></div>     
@@ -100,7 +101,7 @@
 
    <section class="section portfolio">
        <div class="container">
-           <h2 class="section-title portfolio__title">Работа с 2007 года, <br> мы сделали более 500 ремонтов в квартирах и домах</h2>
+           <h2 class="section-title portfolio__title">Работая с 2007 года, <br> мы сделали более 500 ремонтов в квартирах и домах</h2>
            <div class="slider owl-carousel">
                <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
                <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt=""></div>
@@ -122,6 +123,60 @@
        </div>
    </section>
 
+   <section class="section price">
+       <div class="container">
+            <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
+            <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
+
+            <div class="cards price__card">
+                <div class="card wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card__image"><img src="img/price/bathroom.jpg" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+                        <a href="#" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+                <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card__image"><img src="img/price/living.png" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт комнат и квартир</h4>
+                        <a href="#" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+                <div class="card wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card__image"><img src="img/price/office.jpg" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Отделка офисных помещений</h4>
+                        <a href="#" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+                <div class="card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="card__image"><img src="img/price/buildings.jpg" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт в новостройках</h4>
+                        <a href="#" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+                <div class="card wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="card__image"><img src="img/price/kitchen.jpg" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт кухонь</h4>
+                        <a href="#" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+                <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="card__image"><img src="img/price/houses.jpg" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт дач и коттеджей</h4>
+                        <a href="#" class="card__link">Узнать цены</a>
+                    </div>
+                </div>
+            </div>
+
+
+       </div>
+   </section>
+
    <!--<script src="js/main.js"></script>-->
 
    <script
@@ -137,8 +192,10 @@
    <script src="js/scripts.js"></script>
    <script src="js/owl.carousel.js"></script>
    <script src="js/owl.carousel.min.js"></script>
+   <script src="js/wow.min.js"></script>   
 
    <script>
+       new WOW().init();
             $(document).ready(function() {
               var owl = $('.owl-carousel');
               owl.owlCarousel({
