@@ -1,0 +1,97 @@
+.step
+    flex-basis: 20%
+    text-align: center
+    position: relative
+    padding-bottom: 80px
+    &:after
+        content: ''
+        width: 72px
+        height: 25px
+        position: absolute
+        background: url('../img/steps/arrow.png') no-repeat center
+        top: -10px
+        right: -15%
+    &:last-child
+        &:after
+            display: none
+    &__image
+        width: 100px
+        height: 100px
+        border: 3px solid $main-color
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: auto
+        border-radius: 50%
+        margin-bottom: 30px
+    &__text
+        +reg
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px
+        margin-top: -3px
+    &s
+        &__text
+            font-size: 14px
+            min-width: 160px
+            margin: auto
+        &__title
+            margin: auto
+            margin-bottom: 59px
+            +bold
+            font-size: 30px
+            font-weight: 400
+            line-height: 45px
+            width: 661px
+            margin-top: 40px
+        &__subtitle
+            text-align: center
+            margin-bottom: 58px
+            +reg
+            font-size: 20px
+            font-weight: 400
+            line-height: 45px
+            margin-top: -21px
+        &-block
+            display: flex
+            flex-wrap: wrap
+@media (max-width: 768px)
+    .step
+        margin-bottom: 30px
+        &:after
+            display: none
+        &s
+            &-block
+                flex-direction: column
+            &__title
+                max-width: 500px
+@media (max-width: 1200px)
+    .step
+        margin-bottom: 30px
+        flex-basis: 50%
+        &:after
+            display: none
+        &s
+            &-block
+                justify-content: center
+@media (max-width: 567px)
+    .step
+        margin-bottom: 18px
+        &s
+            &__title
+                font-size: 18px
+                font-weight: 400
+                width: 243px
+                line-height: 22px
+                margin-top: -62px
+            &__subtitle
+                font-size: 14px
+                font-weight: 400
+                line-height: 45px
+                margin-top: -50px
+                margin-bottom: 20px
+        &__text
+            font-size: 12px
+            font-weight: 400
+            line-height: 16px
+            margin-top: -10px
