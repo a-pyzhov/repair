@@ -29,6 +29,8 @@
         height: 65px
         &:first-child
             margin-right: 10px
+    &-form__box
+        display: flex
     &__button
         width: 100%
         min-height: 70px
@@ -46,8 +48,6 @@
         margin-top: 6px
     &__footer_elem-2_p
         margin-bottom: 0px
-    &-form_box
-        display: flex
 @media (min-width: 768px) and (max-width: 1200px)
     .offer
         background-size: cover
@@ -63,6 +63,8 @@
         &__footer_elem-2
             flex-direction: column
             display: flex
+        &-form__box
+            display: inline
 @media (max-width: 768px)
     .offer
         background: #fff
@@ -76,6 +78,8 @@
             margin-right: 5%
             margin-left: 5%
             padding-right: 0
+        &-form__box
+            display: inline
 @media (max-width: 567px)
     .offer
         &-block
@@ -119,3 +123,5 @@
             font-size: 15px
             margin-top: 6px
             margin-bottom: 50px
+        &-form__box
+            display: inline
