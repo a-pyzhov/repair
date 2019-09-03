@@ -413,6 +413,12 @@ body {
   margin-bottom: 0px;
 }
 
+.offer-form_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
   .offer {
     background-size: cover;

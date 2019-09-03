@@ -33,6 +33,6 @@ $('#offer-form').on('submit', function(event) {
                     document.getElementById('phone').value=null;
                     }
             });
-        }
+        },
     });
 });

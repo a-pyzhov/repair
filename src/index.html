@@ -73,8 +73,16 @@
                     <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
                     <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
                     <form action="#" id="offer-form" class="form offer_form">
-                        <input type="text" id="user" name="username" class="input offer__input" placeholder="Ваше имя">
-                        <input type="tel" id="phone" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+                        <div class="offer-form_box">
+                            <div>
+                                <input type="text" id="user" name="username" class="input offer__input" placeholder="Ваше имя">
+                                <label id="user-error" class="error" for="user"></label>
+                            </div>
+                            <div>
+                                <input type="tel" id="phone" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+                                <label id="phone-error" class="error" for="phone"></label>
+                            </div>                           
+                        </div>
                         <button class="button offer__button wow tada" data-wow-delay="2s">Получить бесплатный дизайн-проект</button>
                     </form>
 
